@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    android:elevation="0dp"
+    app:cardCornerRadius="@dimen/_8sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/exitHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Exit"
+            android:textColor="@color/blackTextColor"
+            android:textSize="@dimen/_20sdp"
+            android:layout_margin="@dimen/_18sdp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/exitText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/exitHeader"
+            android:text="Really want to exit?"
+            android:textColor="@color/blackTextColor"
+            android:textSize="@dimen/_15sdp"
+            android:layout_margin="@dimen/_18sdp"/>
+
+        <View
+            android:id="@+id/dividerLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C8C8C8"
+            app:layout_constraintTop_toBottomOf="@id/exitText"
+            android:layout_marginTop="@dimen/_18sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/dividerLine"
+            android:weightSum="14"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/noButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="No"
+                android:textSize="@dimen/_18sdp"
+                android:textColor="@color/blackTextColor"
+                android:gravity="center"
+                android:padding="@dimen/_12sdp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#C8C8C8"/>
+
+            <TextView
+                android:id="@+id/yesButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="Yes"
+                android:textSize="@dimen/_18sdp"
+                android:textColor="@color/blackTextColor"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="@dimen/_12sdp"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

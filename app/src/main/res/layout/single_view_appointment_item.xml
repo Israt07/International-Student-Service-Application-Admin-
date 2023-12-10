@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="15">
+
+        <TextView
+            android:id="@+id/dateTextview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="Date"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/blackTextColor"
+            android:padding="@dimen/_8sdp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/blackTextColor"/>
+
+        <TextView
+            android:id="@+id/timeTextview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="Time"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/blackTextColor"
+            android:padding="@dimen/_8sdp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/blackTextColor"/>
+
+        <TextView
+            android:id="@+id/viewButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="View"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/themeColor"
+            android:textStyle="bold"
+            android:padding="@dimen/_8sdp"
+            android:gravity="center_horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blackTextColor"/>
+
+</LinearLayout>
